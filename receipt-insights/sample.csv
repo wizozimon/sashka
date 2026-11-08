@@ -1,0 +1,10 @@
+date,description,amount,category
+2026-09-02,Metro,-65,transport
+2026-09-02,Coffee,-240,cafe
+2026-09-03,Grocery,-1530,food
+2026-09-04,Music subscription,-299,subscription
+2026-10-02,Metro,-65,transport
+2026-10-02,Coffee,-260,cafe
+2026-10-03,Grocery,-1710,food
+2026-10-04,Music subscription,-299,subscription
+2026-10-09,Refund grocery,200,refund
