@@ -1,4 +1,4 @@
-"""Fetch an hourly air-quality forecast and suggest lower-PM2.5 hours."""
+"""Показываем часы с более низким прогнозом PM2.5."""
 import argparse
 import csv
 import requests

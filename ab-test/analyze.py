@@ -1,4 +1,4 @@
-"""A/B experiment analysis on reproducible synthetic data."""
+"""Сравниваем конверсию двух вариантов на учебных данных."""
 import numpy as np
 from scipy.stats import norm, chisquare
 
@@ -20,7 +20,7 @@ def main():
     p_value = 2 * norm.sf(abs(z))
     se_ci = np.sqrt(p0 * (1 - p0) / len(control) + p1 * (1 - p1) / len(variant))
     ci = (diff - 1.96 * se_ci, diff + 1.96 * se_ci)
-    # Equal allocation SRM diagnostic.
+    # Проверяем, не разъехалось ли распределение по группам.
     observed = np.array([len(control), len(variant)])
     srm_p = chisquare(observed, f_exp=[observed.sum() / 2] * 2).pvalue
 

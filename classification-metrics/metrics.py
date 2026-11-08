@@ -1,4 +1,4 @@
-"""Binary classification metrics from scratch on synthetic scores."""
+"""Считаем метрики классификатора на учебных данных."""
 import numpy as np
 
 

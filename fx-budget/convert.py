@@ -1,4 +1,4 @@
-"""Convert an amount using the Bank of Russia daily reference rates."""
+"""Пересчитываем сумму по справочному курсу ЦБ на выбранную дату."""
 import argparse
 import xml.etree.ElementTree as ET
 from datetime import date
@@ -16,7 +16,7 @@ def rates_for(day):
         code = item.findtext("CharCode")
         nominal = float(item.findtext("Nominal").replace(",", "."))
         value = float(item.findtext("Value").replace(",", "."))
-        rates[code] = value / nominal  # RUB for one unit of currency
+        rates[code] = value / nominal  # В XML сумма дана за nominal единиц валюты.
     return rates
 
 

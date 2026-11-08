@@ -1,4 +1,4 @@
-"""Create a small reproducible SQLite event dataset."""
+"""Создаём небольшой повторяемый набор событий для SQL-запросов."""
 import sqlite3
 from datetime import datetime, timedelta, timezone
 import numpy as np

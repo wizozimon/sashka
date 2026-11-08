@@ -1,4 +1,4 @@
-"""Track Steam Community Market price snapshots for CS2 items."""
+"""Сохраняем снимки цен предметов CS2 из Steam Market."""
 import argparse
 import sqlite3
 import time

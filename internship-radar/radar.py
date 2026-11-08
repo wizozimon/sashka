@@ -1,4 +1,4 @@
-"""Collect public HeadHunter vacancy search results into CSV."""
+"""Собираем открытые вакансии HeadHunter в CSV."""
 import argparse
 import csv
 import os

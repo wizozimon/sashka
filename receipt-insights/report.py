@@ -1,4 +1,4 @@
-"""Summarize a local transaction CSV without uploading it anywhere."""
+"""Сводим расходы из локального CSV, не отправляя выписку в сеть."""
 import argparse
 import pandas as pd
 
