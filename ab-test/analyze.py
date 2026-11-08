@@ -8,7 +8,7 @@ N_PER_GROUP = 10_000
 
 def main():
     rng = np.random.default_rng(SEED)
-    # Synthetic scenario: baseline conversion 10%, variant 11%.
+    # В примере новый вариант страницы немного лучше контрольного.
     control = rng.binomial(1, 0.10, N_PER_GROUP)
     variant = rng.binomial(1, 0.11, N_PER_GROUP)
     x0, x1 = int(control.sum()), int(variant.sum())
